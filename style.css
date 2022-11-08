@@ -4,7 +4,7 @@
   position: absolute;
   width: 1440px;
   height: 846px;
-  left: 0px;
+  left: 0.1px;
   top: 71px;
 }
 
@@ -23,7 +23,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 #nav_bar {
@@ -32,12 +32,11 @@
   width: 375px;
   height: 72px;
   left: 1110px;
-  top: 0px;
+  top: 0.1px;
   display: flex;
   gap: 20px;
   list-style: none;
   padding: 15px 24px;
-
 }
 
 #headerbg {
@@ -68,7 +67,7 @@
   height: 924px;
   left: 115px;
   top: 3350px;
-  background: #FFFFFF;
+  background: #fff;
 }
 
 #contact_me {
@@ -76,7 +75,7 @@
   position: absolute;
   width: 1440px;
   height: 846px;
-  left: 0px;
+  left: 0.1px;
   top: 4000px;
 }
 
@@ -84,13 +83,13 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0.1px;
   gap: 12px;
   position: absolute;
   width: 920px;
   height: 268px;
   left: 260px;
-  top: calc(50% - 268px/2);
+  top: calc(50% - 268px / 2);
 }
 
 #primary_text {
@@ -104,7 +103,7 @@
   display: flex;
   align-items: center;
   letter-spacing: 0.37px;
-  color: #091E42;
+  color: #091e42;
 }
 
 #sub_text {
@@ -138,7 +137,7 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7F8CFF;
+  color: #7f8cff;
 }
 
 .portfolio_card {
@@ -153,8 +152,8 @@
   position: absolute;
   right: 86px;
   top: 1100px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 24px;
 }
 
@@ -162,8 +161,8 @@
   position: absolute;
   right: 86px;
   top: 1650px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 24px;
 }
 
@@ -171,8 +170,8 @@
   position: absolute;
   right: 86px;
   top: 2200px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 24px;
 }
 
@@ -180,8 +179,8 @@
   position: absolute;
   right: 86px;
   top: 2750px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 24px;
 }
 
@@ -217,7 +216,7 @@
   line-height: 52px;
   display: flex;
   align-items: center;
-  color: #091E42;
+  color: #091e42;
 }
 
 #about_subtext {
@@ -263,7 +262,7 @@
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -274,7 +273,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
+  padding: 0.1px;
   position: absolute;
   width: 684px;
   height: 360px;
@@ -302,7 +301,7 @@
   width: 40px;
   height: 40px;
   left: 775px;
-  top: 0px;
+  top: 0.1px;
 }
 
 #right_arrow1 {
@@ -367,7 +366,7 @@
   position: absolute;
   width: 801px;
   height: 56px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -377,7 +376,7 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .shapes {
@@ -400,7 +399,7 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #EBEBFF;
+  color: #ebebff;
 }
 
 .username {
@@ -419,7 +418,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .user_email {
@@ -438,7 +437,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .user_message {
@@ -457,7 +456,7 @@
   line-height: 20px;
   display: flex;
   align-items: center;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 #get_in_touch_button {
@@ -470,8 +469,8 @@
   height: 45px;
   left: 590px;
   top: 730px;
-  background: #FFFFFF;
-  border: 1px solid #FFFFFF;
+  background: #fff;
+  border: 1px solid #fff;
   border-radius: 8px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -481,7 +480,7 @@
   line-height: 24px;
   text-align: center;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -495,7 +494,7 @@
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  color: #091E42;
+  color: #091e42;
 }
 
 #ul_desc {
@@ -506,7 +505,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0.1px;
   gap: 12px;
   width: 297px;
   height: 40px;
