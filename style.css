@@ -32,7 +32,7 @@
   width: 375px;
   height: 72px;
   left: 1110px;
-  top: 0.1px;
+  top: -32px;
   display: flex;
   gap: 20px;
   list-style: none;
@@ -184,7 +184,7 @@
   border-radius: 24px;
 }
 
-#snapshot {
+#lsnapshot {
   position: absolute;
   width: 544px;
   height: 448px;
@@ -193,7 +193,29 @@
   border-radius: 8px;
 }
 
+#rsnapshot {
+  position: absolute;
+  width: 544px;
+  height: 448px;
+  left: 590px;
+  top: 24px;
+  border-radius: 8px;
+}
+
 #leftblock {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px;
+  gap: 24px;
+  position: absolute;
+  width: 544px;
+  height: 445px;
+  left: 40px;
+  top: 24px;
+}
+
+#rightblock {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -277,8 +299,8 @@
   position: absolute;
   width: 684px;
   height: 360px;
-  left: 350px;
-  top: 50px;
+  left: 200px;
+  top: 42px;
 }
 
 #JHC {
@@ -300,7 +322,7 @@
   position: absolute;
   width: 40px;
   height: 40px;
-  left: 775px;
+  left: 925px;
   top: 0.1px;
 }
 
@@ -312,7 +334,7 @@
   position: absolute;
   width: 25px;
   height: 40px;
-  left: 775px;
+  left: 925px;
   top: 200px;
   border-radius: 8px;
 }
@@ -325,7 +347,7 @@
   position: absolute;
   width: 25px;
   height: 40px;
-  left: 775px;
+  left: 925px;
   top: 250px;
   border-radius: 8px;
 }
@@ -644,9 +666,74 @@
   align-items: center;
   padding: 12px;
   gap: 10px;
-  width: 110px;
+  width: 123px;
   height: 48px;
   border: 1px solid #6070ff;
   border-radius: 8px;
   top: 310px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396DF2;
+}
+
+#normal_button :enabled {
+  background: #fff;
+  color: #6070ff;
+}
+
+#normal_button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+#normal_button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+#normal_button:disabled {
+  color: #5e6c84;
+}
+
+#normal_button1:enabled {
+  background: #fff;
+  color: #6070ff;
+}
+
+#normal_button1:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+#normal_button1:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+#normal_button1:disabled {
+  color: #5e6c84;
+}
+
+#get_in_touch_button:enabled {
+  background: #fff;
+  color: #6070ff;
+}
+
+#get_in_touch_button:hover {
+  background: #6070ff;
+  color: #fff;
+}
+
+#get_in_touch_button:active {
+  background: #2230d2;
+  color: #fff;
+}
+
+#get_in_touch_button:disabled {
+  color: #5e6c84;
 }
