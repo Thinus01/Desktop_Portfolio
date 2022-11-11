@@ -1,7 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+ * {
+  outline: 2px solid red;
+}
+
 /* Mobile */
 @media (max-width: 820px) {
+  html {
+    width: calc(100vw - 15px);
+  }
+
   #hamburger {
     position: absolute;
     top: 45px;
@@ -15,10 +23,12 @@
     color: #6070ff;
     padding-top: 20px;
     padding-left: 30px;
+    width: calc(100vw - 75px);
   }
 
   header {
     height: 48px;
+    width: calc(100vw - 55px);
   }
 
   #headerbg {
@@ -26,7 +36,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 100%;
+    width: calc(100vw - 15px);
     height: 721.46px;
     left: 0.1px;
     top: 119px;
@@ -78,7 +88,7 @@
     align-items: center;
     padding: 114px 24px;
     position: absolute;
-    width: 350px;
+    width: 375px;
     height: 1800px;
     left: 0.1px;
     top: 440px;
@@ -315,8 +325,6 @@
   }
 
   #tags {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     position: absolute;
     top: -60px;
     left: -45px;
@@ -406,8 +414,6 @@
   }
 
   #normal_button {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     position: absolute;
     top: 5px;
     left: -10px;
@@ -711,15 +717,13 @@
     background-size: cover;
     position: absolute;
     background-image: url("images/Contactme.svg");
-    width: 418px;
+    width: 456px;
     height: 780px;
     top: 10px;
     transform: translateX(25%);
   }
 
   #contact_me {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     position: absolute;
     width: 220px;
     height: 741px;
@@ -731,14 +735,14 @@
     position: absolute;
     background-image: url("images/contactformshapes_mobile.svg");
     background-size: cover;
-    width: 219px;
+    width: 266px;
     height: 709.17px;
     left: 190px;
   }
 
   #contact_me_text {
     position: absolute;
-    width: 226px;
+    width: 330px;
     height: 56px;
     font-family: Poppins, sans-serif;
     font-style: normal;
@@ -750,7 +754,7 @@
     text-align: center;
     color: #fff;
     top: 55px;
-    left: -128px;
+    left: -150px;
     transform: translateX(25%);
   }
 
@@ -929,9 +933,14 @@
 
 /* Desktop */
 @media (min-width: 821px) {
+  html {
+    width: calc(100vw - 15%);
+  }
+
   #header {
     position: absolute;
     height: 846px;
+    width: calc(100vw - 10%);
     left: 0.1px;
     top: 71px;
   }
@@ -967,7 +976,7 @@
     position: absolute;
     width: 184px;
     height: 72px;
-    left: 990px;
+    right: 2vw;
     top: -32px;
     display: flex;
     gap: 20px;
@@ -977,29 +986,28 @@
 
   #headerbg {
     background-image: url("images/Headerbg.svg");
+    box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
-    width: 940%;
-    height: 90%;
+    width: calc(100vw - 5%);
+    height: 100%;
   }
 
   #last_page {
     position: absolute;
-    width: 1130px;
-    height: 924px;
-    left: 400px;
+    width: 80vw;
+    height: 600px;
+    margin-left: 8vw;
     top: 3350px;
     background: #fff;
   }
 
   #contact_me {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     background: url("images/contactShap.svg");
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: 99.9%;
+    width: calc(100vw - 1%);
     height: 846px;
     left: 0.1px;
     top: 4000px;
@@ -1012,7 +1020,7 @@
     padding: 0.1px;
     gap: 12px;
     position: absolute;
-    width: 920px;
+    width: 67vw;
     height: 268px;
     left: 260px;
     top: calc(50% - 268px / 2);
@@ -1075,13 +1083,14 @@
   }
 
   #list_portfolio {
-    position: absolute;
-    left: 1600px;
+    display: grid;
   }
 
   .container1 {
+    display: flex;
     position: absolute;
-    right: 86px;
+    left: 9%;
+    margin: auto;
     top: 1100px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1090,7 +1099,7 @@
 
   .container2 {
     position: absolute;
-    right: 86px;
+    left: 9%;
     top: 1650px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1099,7 +1108,7 @@
 
   .container3 {
     position: absolute;
-    right: 86px;
+    left: 9%;
     top: 2200px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1108,7 +1117,7 @@
 
   .container4 {
     position: absolute;
-    right: 86px;
+    left: 9%;
     top: 2750px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1206,7 +1215,7 @@
     height: 48px;
     border: 1px solid #6070ff;
     border-radius: 8px;
-    top: 43.5%;
+    top: 70%;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1253,7 +1262,7 @@
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 120%;
+    left: 135%;
     top: 0.1px;
   }
 
@@ -1265,7 +1274,7 @@
     position: absolute;
     width: 25px;
     height: 40px;
-    left: 120%;
+    left: 135%;
     top: 200px;
     border-radius: 8px;
   }
@@ -1278,7 +1287,7 @@
     position: absolute;
     width: 25px;
     height: 40px;
-    left: 120%;
+    left: 135%;
     top: 250px;
     border-radius: 8px;
   }
@@ -1324,7 +1333,8 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    left: 800px;
+    margin: 0.1px 33vw;
+    padding-left: 5%;
     top: 80px;
     display: flex;
     align-items: center;
@@ -1337,14 +1347,14 @@
     position: absolute;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 90%;
+    width: calc(100vw - 7%);
     height: 845px;
     left: 75.34px;
   }
 
   #sub_contact {
     position: absolute;
-    left: 680px;
+    margin: 0.1px 30.5vw;
     top: 180px;
     width: 470px;
     height: 102px;
@@ -1363,8 +1373,7 @@
     width: 400px;
     height: 57px;
     position: absolute;
-    left: 720px;
-    right: 6.4%;
+    margin: 0.1px 33vw;
     top: 40.26%;
     bottom: 6.86%;
     font-style: normal;
@@ -1382,8 +1391,7 @@
     width: 400px;
     height: 57px;
     position: absolute;
-    left: 720px;
-    right: 6.4%;
+    margin: 0.1px 33vw;
     top: 50.26%;
     bottom: 6.86%;
     font-style: normal;
@@ -1401,8 +1409,7 @@
     width: 400px;
     height: 184px;
     position: absolute;
-    left: 720px;
-    right: 6.4%;
+    margin: 0.1px 33vw;
     top: 60.26%;
     bottom: 6.86%;
     font-style: normal;
@@ -1422,7 +1429,7 @@
     position: absolute;
     width: 140px;
     height: 45px;
-    left: 850px;
+    margin: 0.1px 40vw;
     top: 730px;
     background: #fff;
     border: 1px solid #fff;
@@ -1495,8 +1502,6 @@
   }
 
   #tags {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
     position: absolute;
     top: 230px;
     left: -15px;
