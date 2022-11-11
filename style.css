@@ -673,7 +673,7 @@
     border-radius: 8px;
   }
 
-    ul {
+  ul {
     list-style-type: none;
   }
 
@@ -926,25 +926,6 @@
   }
 
   #normal_button1:disabled {
-    color: #5e6c84;
-  }
-
-  #get_in_touch_button:enabled {
-    background: #fff;
-    color: #6070ff;
-  }
-
-  #get_in_touch_button:hover {
-    background: #6070ff;
-    color: #fff;
-  }
-
-  #get_in_touch_button:active {
-    background: #2230d2;
-    color: #fff;
-  }
-
-  #get_in_touch_button:disabled {
     color: #5e6c84;
   }
 }
