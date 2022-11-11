@@ -315,6 +315,8 @@
   }
 
   #tags {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     position: absolute;
     top: -60px;
     left: -45px;
@@ -404,6 +406,8 @@
   }
 
   #normal_button {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     position: absolute;
     top: 5px;
     left: -10px;
@@ -714,6 +718,8 @@
   }
 
   #contact_me {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     position: absolute;
     width: 220px;
     height: 741px;
@@ -987,6 +993,8 @@
   }
 
   #contact_me {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     background: url("images/contactShap.svg");
     position: absolute;
     width: 1246px;
@@ -1480,6 +1488,8 @@
   }
 
   #tags {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
     position: absolute;
     top: 230px;
     left: -15px;
