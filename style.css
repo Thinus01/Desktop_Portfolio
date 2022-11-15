@@ -1034,6 +1034,11 @@
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #primary_text:hover {
+    font-size: 60px;
   }
 
   #sub_text {
@@ -1045,6 +1050,11 @@
     font-size: 20px;
     line-height: 28px;
     color: #344563;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #sub_text:hover {
+    font-size: 30px;
   }
 
   #socialicons {
@@ -1060,7 +1070,7 @@
   }
 
   #connect {
-    width: 130px;
+    width: 180px;
     height: 24px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -1068,6 +1078,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #connect:hover {
+    font-size: 20px;
   }
 
   .portfolio_card {
@@ -1175,6 +1190,12 @@
     display: flex;
     align-items: center;
     color: #091e42;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #about_myself:hover {
+    font-size: 60px;
+    margin-bottom: 15px;
   }
 
   #about_subtext {
@@ -1186,6 +1207,12 @@
     font-size: 16px;
     line-height: 24px;
     color: #344563;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #about_subtext:hover {
+    font-size: 20px;
+    margin-bottom: 15px;
   }
 
   #about_socialicons {
@@ -1457,6 +1484,12 @@
     font-size: 40px;
     line-height: 52px;
     color: #091e42;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #card_heading:hover {
+    font-size: 50px;
+    margin-bottom: 24px;
   }
 
   #ul_desc {
@@ -1491,6 +1524,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #344563;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #block_subtext:hover {
+    font-size: 22px;
   }
 
   #Mblock_subtext {
@@ -1587,6 +1625,11 @@
     font-size: 13px;
     line-height: 16px;
     color: #344563;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #pcanopy:hover {
+    font-size: 15px;
   }
 
   #pcareer {
@@ -1599,6 +1642,11 @@
     font-size: 13px;
     line-height: 16px;
     color: #7a869a;
+    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+  }
+
+  #pcareer:hover {
+    font-size: 15px;
   }
 
   #normal_button {
