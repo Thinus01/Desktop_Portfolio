@@ -1035,10 +1035,6 @@
     display: none;
   }
 
-  .hamburger {
-    display: none;
-  }
-
   .clicked {
     display: none;
   }
@@ -1152,7 +1148,7 @@
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
-    transition: all 200ms cubic-bezier(1,-0.8, 0, 1.58);
+    transition: all 200ms cubic-bezier(1, -0.8, 0, 1.58);
   }
 
   #primary_text:hover {
