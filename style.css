@@ -6,33 +6,63 @@
     width: calc(100vw - 15px);
   }
 
+  .area {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .blurs {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 614.6%;
+    background: rgb(90, 151, 243);
+    backdrop-filter: blur(5px);
+    color: #6070ff;
+    mix-blend-mode: multiply;
+    transition: 50ms;
+  }
+
   .ham_btn {
     position: absolute;
     border: none;
     top: 45px;
     right: 10%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .btn {
     border: none;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    line-height: 200%;
+    font-weight: 500;
+    font-size: xx-large;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .hamburger {
     transition: 50ms;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .clicked {
     position: absolute;
     top: 12%;
-    left: 40%;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
+    left: -15px;
     opacity: 1;
-    line-height: 270%;
-    text-align: center;
-    font-weight: 300;
-    font-size: large;
     z-index: 1;
   }
 
@@ -41,6 +71,7 @@
     border: none;
     top: -35px;
     right: 50%;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .xline1 {
@@ -48,6 +79,7 @@
     height: 3px;
     width: 20px;
     transition: 100ms;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .xline2 {
@@ -55,12 +87,14 @@
     height: 3px;
     width: 20px;
     transition: 500ms;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .xline3 {
     height: 3px;
     width: 20px;
     transition: 100ms;
+    background-color: rgba(0, 0, 0, 0);
   }
 
   .line_rotate1 .xline1 {
