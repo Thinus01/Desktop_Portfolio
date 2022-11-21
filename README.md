@@ -14,6 +14,10 @@ Clone this repository by using the command line :
 - Twitter:https://twitter.com/thinus_v_d_v
 - LinkedIn:https://www.linkedin.com/in/thinus-van-de-venter-99aa26203/
 
+- GitHub: [@githubhandle]()
+- Twitter: [@twitterhandle](https://twitter.com/SchoolsAfrikana)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/okonkwo-echezona-4b92181b0/)
+
 -GitHub Webpage (https://thinus01.github.io/Desktop_Portfolio/)
 ## :handshake: Contributing
 Contributions, issues, and feature requests are welcome!
