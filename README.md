@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
-# Portfolio: setup and mobile first project
-> This project shows my Portfolio: setup and mobile first on a webpage.
+# Portfolio: Desktop version
+> This project shows my Portfolio a desktop.
 ## Built With
 - HTML and CSS
 ## Getting Started
@@ -8,9 +8,13 @@ To get a local copy up and running follow these simple example steps.
 ### Prerequisites
 ### Setup
 Clone this repository by using the command line :
-`git clone https://github.com/Thinus01/Portfolio.git`
+`git clone https://github.com/Thinus01/Desktop_Portfolio.git`
 ## Authors
 - GitHub: [@Thinus01](https://github.com/Thinus01)
+- Twitter:https://twitter.com/thinus_v_d_v
+- LinkedIn:https://www.linkedin.com/in/thinus-van-de-venter-99aa26203/
+
+-GitHub Webpage (https://thinus01.github.io/Desktop_Portfolio/)
 ## :handshake: Contributing
 Contributions, issues, and feature requests are welcome!
 Feel free to check the [issues page](../../issues/).
