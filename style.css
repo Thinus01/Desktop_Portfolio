@@ -8,20 +8,16 @@
 
   .area {
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
     width: 100px;
     height: 100px;
   }
 
   .blurs {
     position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
+    left: 0.1px;
+    right: 0.1px;
+    top: 0.1px;
+    bottom: 0.1px;
     width: 100%;
     height: 614.6%;
     background: rgb(90, 151, 243);
