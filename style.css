@@ -6,10 +6,84 @@
     width: calc(100vw - 15px);
   }
 
-  #hamburger {
+  .ham_btn {
     position: absolute;
+    border: none;
     top: 45px;
     right: 10%;
+  }
+
+  .btn {
+    border: none;
+  }
+
+  .hamburger {
+    transition: 50ms;
+  }
+
+  .clicked {
+    position: absolute;
+    top: 12%;
+    left: 40%;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    opacity: 1;
+    line-height: 270%;
+    text-align: center;
+    font-weight: 300;
+    font-size: large;
+    z-index: 1;
+  }
+
+  .trans_lines {
+    position: absolute;
+    border: none;
+    top: -35px;
+    right: 50%;
+  }
+
+  .xline1 {
+    margin: -18px;
+    height: 3px;
+    width: 20px;
+    transition: 100ms;
+  }
+
+  .xline2 {
+    margin: -9px;
+    height: 3px;
+    width: 20px;
+    transition: 500ms;
+  }
+
+  .xline3 {
+    height: 3px;
+    width: 20px;
+    transition: 100ms;
+  }
+
+  .line_rotate1 .xline1 {
+    transform: rotate(45deg);
+  }
+
+  .line_rotate2 .xline2 {
+    transform: scaleX(0);
+    position: absolute;
+    left: 39px;
+    top: 36px;
+  }
+
+  .line_rotate3 .xline3 {
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 30px;
+    top: 27px;
+  }
+
+  .hidden {
+    opacity: 0;
+    transition: 500ms;
   }
 
   .navbar {
@@ -949,7 +1023,51 @@
     text-decoration: none;
   }
 
-  #hamburger {
+  .hamburger {
+    display: none;
+  }
+
+  .ham_btn {
+    display: none;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .clicked {
+    display: none;
+  }
+
+  .trans_lines {
+    display: none;
+  }
+
+  .xline1 {
+    display: none;
+  }
+
+  .xline2 {
+    display: none;
+  }
+
+  .xline3 {
+    display: none;
+  }
+
+  .line_rotate1 .xline1 {
+    display: none;
+  }
+
+  .line_rotate2 .xline2 {
+    display: none;
+  }
+
+  .line_rotate3 .xline3 {
     display: none;
   }
 
@@ -1034,7 +1152,7 @@
     align-items: center;
     letter-spacing: 0.37px;
     color: #091e42;
-    transition: all 200ms cubic-bezier(0.68, -0.62, 0.36, 1.62);
+    transition: all 200ms cubic-bezier(1,-0.8, 0, 1.58);
   }
 
   #primary_text:hover {
