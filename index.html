@@ -21,15 +21,28 @@
                 <li href="#"><a href="#">About</a></li>
                 <li href="#"><a href="#">Contact</a></li>
             </ul>
-            <img id="hamburger" src="images/hamburger.svg" alt="menu button">
+            <button class="ham_btn">
+                <img class="hamburger" src="images/hamburger.svg" alt="menu button">
+                <ul class="trans_lines hidden">
+                    <li><img class="xline1" src="images/line.png" alt="line 1"></li>
+                    <li><img class="xline2" src="images/line.png" alt="line 1"></li>
+                    <li><img class="xline3" src="images/line.png" alt="line 1"></li>
+                </ul>
+            </button>
+            <ul class="clicked hidden">
+                <li><button class="btn"><a href="#primary_text">Hello</a></button></li>
+                <li><button class="btn"><a href="#list_portfolio">Portfolio</a></button></li>
+                <li><button class="btn"><a href="#last_page">About</a></button></li>
+                <li><button class="btn"><a href="#contact_me">Contact</a></button></li>
+            </ul>
         </nav>
         <div id="headerbg">
             <div id="headtext">
                 <h1 id="primary_text">I'm Thinus Glad to see you!</h1>
 
-                <h2 id="sub_text">I'm a software developer! I can help you build a product, feature or website. Look
+                <p id="sub_text">I'm a software developer! I can help you build a product, feature or website. Look
                     through some of my work and experience! If you like what you see and have a project you need coded,
-                    don't hesitate to contact me.</h2>
+                    don't hesitate to contact me.</p>
                 <a href="#" id="connect">LET'S CONNECT</a>
             </div>
 
@@ -274,6 +287,7 @@
             </div>
         </div>
     </section>
+    <script src="javascript.js"></script> 
 </body>
 
 </html>
