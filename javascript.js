@@ -7,7 +7,7 @@ const btns = document.querySelectorAll('.btn');
 const str = 'line_rotate';
 
 btns.forEach(btn => {
-  btn.addEventListener(('click'), () => {
+  btn.addEventListener((('click')), () => {
     hamburger.classList.toggle('hidden');
     transLines.classList.toggle('hidden');
     clicked.classList.toggle('hidden');
@@ -18,7 +18,7 @@ btns.forEach(btn => {
   });
 });
 
-hamBtn.addEventListener((('click')), () => {
+hamBtn.addEventListener(('click'), () => {
   hamburger.classList.toggle('hidden');
   transLines.classList.toggle('hidden');
   clicked.classList.toggle('hidden');
