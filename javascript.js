@@ -4,7 +4,6 @@ const transLines = document.querySelector('.trans_lines');
 const clicked = document.querySelector('.clicked');
 const btns = document.querySelectorAll('.btn');
 const blurs = document.querySelector('.blurs');
-const area = document.querySelector('.area');
 const str = 'line_rotate';
 
 btns.forEach((btn) => {
