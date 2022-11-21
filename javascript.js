@@ -4,7 +4,7 @@ const transLines = document.querySelector('.trans_lines');
 const clicked = document.querySelector('.clicked');
 const pText = document.querySelector('#primary_text');
 const btns = document.querySelectorAll('.btn');
-var str = 'line_rotate';
+const str = 'line_rotate';
 
 btns.forEach(btn => {
   btn.addEventListener(('click'), () => {
@@ -12,18 +12,18 @@ btns.forEach(btn => {
     transLines.classList.toggle('hidden');
     clicked.classList.toggle('hidden');
     pText.classList.toggle('hidden');
-    for (let i = 1; i <= 3; i += 1){
+    for (let i = 1; i <= 3; i += 1) {
       transLines.classList.toggle(str + i.toString());
     }
   });
 });
 
-hamBtn.addEventListener(('click'), () => {
+hamBtn.addEventListener((('click')), () => {
   hamburger.classList.toggle('hidden');
   transLines.classList.toggle('hidden');
   clicked.classList.toggle('hidden');
   pText.classList.toggle('hidden');
-  for (let i = 1; i <= 3; i +=1 ){
+  for (let i = 1; i <= 3; i += 1) {
     transLines.classList.toggle(str + i.toString());
   }
 });
