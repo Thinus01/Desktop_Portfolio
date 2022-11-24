@@ -205,7 +205,7 @@ section.innerHTML = `
 const open = document.querySelector('.SeeProjectController');
 open.addEventListener('click', () => {
   const main = document.createElement('div');
-  main.className ='main';
+  main.className = 'main';
   const popup = document.createElement('div');
   popup.className = 'popup';
   main.appendChild(popup);
@@ -245,8 +245,8 @@ const projects = [
     live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
     source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
     ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
-    },
-    {
+  },
+  {
     id: 'main-project-button',
     title: 'Tonic',
     image: 'images/SnapshootPortfolio(2).svg',
@@ -256,8 +256,8 @@ const projects = [
     live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
     source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
     ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
-    },
-    {
+  },
+  {
     id: 'main-project-button',
     title: 'Tonic',
     image: 'images/SnapshootPortfolio(3).svg',
@@ -267,8 +267,8 @@ const projects = [
     live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
     source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
     ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
-    },
-    {
+  },
+  {
     id: 'main-project-button',
     title: 'Tonic',
     image: 'images/SnapshootPortfolio(4).svg',
@@ -310,8 +310,8 @@ function createDiv(buttonId) {
     projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
   <li>${projects[buttonId].popul[1]}</li>
   <li>${projects[buttonId].popul[2]}</li>`;
-      } else {
-  projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
+  } else {
+    projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
   <li>${projects[buttonId].popul[1]}</li>
   <li>${projects[buttonId].popul[2]}</li>
   <li>${projects[buttonId].popul[3]}</li>
