@@ -5,16 +5,12 @@ const clicked = document.querySelector('.clicked');
 const btns = document.querySelectorAll('.btn');
 const blurs = document.querySelector('.blurs');
 const str = 'line_rotate';
-const normBtn = document.querySelector('.normal_button');
-const btnController = document.querySelectorAll('.SeeProjectController');
-const popup = document.querySelector('.popup');
-const closed = document.querySelector('.CloseButton')
 const projectsSection = document.querySelector('#projects');
 const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
 
-section.innerHTML =`
+section.innerHTML = `
 <section id="list_portfolio">
 <section class="container1">
 <div class="portfolio_card">
@@ -322,70 +318,66 @@ hamBtn.addEventListener(('click'), () => {
       <li>${projects[buttonId].popul[4]}</li>
       <li>${projects[buttonId].popul[5]}</li>`;
       }
-
       const Top = document.querySelector('.popup');
-      if (buttonId == 0){
-        Top.style.top = '280px';
-      }else if (buttonId == 1){
-        Top.style.top = '860px';
-      }else if (buttonId == 2){
-        Top.style.top = '1380px';
-      }else if (buttonId == 3){
-        Top.style.top = '1950px';
-      }
-    
-      liveSiteBtn.textContent = 'See Live';
-      liveSiteBtn.style.backgroundImage = "URL('images/SeeProject.svg')";
-      liveSiteBtn.style.backgroundRepeat = 'no-repeat';
-      liveSiteBtn.style.backgroundPosition = "105px 10px";
-      liveSiteBtn.href = `${projects[buttonId].live_link}`;
-      sourceBtn.textContent = 'See Source';
-      sourceBtn.style.backgroundImage = "URL('images/GitHub.svg')";
-      sourceBtn.style.backgroundRepeat = 'no-repeat';
-      sourceBtn.style.backgroundPosition = "115px 10px";
-      sourceBtn.href = `${projects[buttonId].source_link}`;
-      liveSiteBtn.classList.add('popup_btn');
-      sourceBtn.classList.add('popup_btn');
-      projectExitBtn.style.backgroundImage = "URL('images/ClosePopup.svg')";
-      projectExitBtn.style.backgroundRepeat = 'no-repeat';
-      projectExitBtn.style.backgroundSize = 'cover';
-      projectExitBtn.classList.add('popup-exit');
-      div.classList.toggle('popup');
-
-      if (window.innerWidth < 820) {
-        projectExitBtn.style.backgroundImage = "URL('images/ClosePopup.svg')";
-        projectExitBtn.style.backgroundRepeat = 'no-repeat';
-        projectExitBtn.style.backgroundSize = 'cover';
-        projectExitBtn.classList.add('popup-exit');
-        div.classList.toggle('mobile-width');
-        projectsTitle.classList.toggle('mobile-title');
-        projectsLanguages.classList.toggle('mobile-languages');
-        images.classList.toggle('popup-mobile-img');
-        paragraph.classList.toggle('popup_mobile_p');
-        sourceBtn.classList.toggle('mobile_btn');
-        liveSiteBtn.classList.toggle('mobile_btn');
-      }
-    
-      div.appendChild(projectsTitle);
-      div.appendChild(canopy);
-      div.appendChild(images);
-      div.appendChild(paragraph);
-      div.appendChild(projectsLanguages);
-      div.appendChild(liveSiteBtn);
-      div.appendChild(sourceBtn);
-      div.appendChild(projectExitBtn);
-      projectsSection.appendChild(div);
-    
-      projectExitBtn.addEventListener('click', () => {
-        div.remove();
-        document.body.style.background = '#fff';
-        blurs.classList.add('hidden');
-      });
-    }
-  const buttons = [...document.querySelectorAll('.SeeProjectController')];
-
-  for (let i = 0; i < buttons.length; i += 1) {
-    buttons[i].addEventListener('click', () => {
-      createDiv(i);
-    });
+  if (buttonId === 0) {
+    Top.style.top = '280px';
+  } else if (buttonId === 1) {
+    Top.style.top = '860px';
+  } else if (buttonId === 2) {
+    Top.style.top = '1380px';
+  } else if (buttonId === 3) {
+    Top.style.top = '1950px';
   }
+  liveSiteBtn.textContent = 'See Live';
+  liveSiteBtn.style.backgroundImage = "URL('images/SeeProject.svg')";
+  liveSiteBtn.style.backgroundRepeat = 'no-repeat';
+  liveSiteBtn.style.backgroundPosition = '105px 10px';
+  liveSiteBtn.href = `${projects[buttonId].live_link}`;
+  sourceBtn.textContent = 'See Source';
+  sourceBtn.style.backgroundImage = "URL('images/GitHub.svg')";
+  sourceBtn.style.backgroundRepeat = 'no-repeat';
+  sourceBtn.style.backgroundPosition = "115px 10px";
+  sourceBtn.href = `${projects[buttonId].source_link}`;
+  liveSiteBtn.classList.add('popup_btn');
+  sourceBtn.classList.add('popup_btn');
+  projectExitBtn.style.backgroundImage = "URL('images/ClosePopup.svg')";
+  projectExitBtn.style.backgroundRepeat = 'no-repeat';
+  projectExitBtn.style.backgroundSize = 'cover';
+  projectExitBtn.classList.add('popup-exit');
+  div.classList.toggle('popup');
+
+  if (window.innerWidth < 820) {
+    projectExitBtn.style.backgroundImage = "URL('images/ClosePopup.svg')";
+    projectExitBtn.style.backgroundRepeat = 'no-repeat';
+    projectExitBtn.style.backgroundSize = 'cover';
+    projectExitBtn.classList.add('popup-exit');
+    div.classList.toggle('mobile-width');
+    projectsTitle.classList.toggle('mobile-title');
+    projectsLanguages.classList.toggle('mobile-languages');
+    images.classList.toggle('popup-mobile-img');
+    paragraph.classList.toggle('popup_mobile_p');
+    sourceBtn.classList.toggle('mobile_btn');
+    liveSiteBtn.classList.toggle('mobile_btn');
+  }
+  div.appendChild(projectsTitle);
+  div.appendChild(canopy);
+  div.appendChild(images);
+  div.appendChild(paragraph);
+  div.appendChild(projectsLanguages);
+  div.appendChild(liveSiteBtn);
+  div.appendChild(sourceBtn);
+  div.appendChild(projectExitBtn);
+  projectsSection.appendChild(div);
+  projectExitBtn.addEventListener('click', () => {
+    div.remove();
+    document.body.style.background = '#fff';
+    blurs.classList.add('hidden');
+  });
+}
+const buttons = [...document.querySelectorAll('.SeeProjectController')];
+
+for (let i = 0; i < buttons.length; i += 1) {
+  buttons[i].addEventListener('click', () => {
+    createDiv(i);
+  });
+}
