@@ -203,14 +203,14 @@ section.innerHTML = `
 `;
 
 const open = document.querySelector('.SeeProjectController');
-  open.addEventListener('click', ()=> {
+open.addEventListener('click', () => {
   const main = document.createElement('div');
-  main.className='main';
+  main.className ='main';
   const popup = document.createElement('div');
   popup.className = 'popup';
   main.appendChild(popup);
   body.appendChild(main);
-})
+});
 
 btns.forEach((btn) => {
   btn.addEventListener(('click'), () => {
@@ -234,91 +234,91 @@ hamBtn.addEventListener(('click'), () => {
   }
 });
 
-  const projects = [
-    {
-      id: 'main-project-button',
-      title: 'Tonic',
-      image: 'images/SnapshootPortfolio(1).svg',
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.",
-      popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
-      live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
-      source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-      ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+const projects = [
+  {
+    id: 'main-project-button',
+    title: 'Tonic',
+    image: 'images/SnapshootPortfolio(1).svg',
+    description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
+    popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
+    source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
+    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
     },
     {
-      id: 'main-project-button',
-      title: 'Tonic',
-      image: 'images/SnapshootPortfolio(2).svg',
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.",
-      popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
-      live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
-      source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-      ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+    id: 'main-project-button',
+    title: 'Tonic',
+    image: 'images/SnapshootPortfolio(2).svg',
+    description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
+    popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
+    source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
+    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
     },
     {
-      id: 'main-project-button',
-      title: 'Tonic',
-      image: 'images/SnapshootPortfolio(3).svg',
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.",
-      popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
-      live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
-      source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-      ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+    id: 'main-project-button',
+    title: 'Tonic',
+    image: 'images/SnapshootPortfolio(3).svg',
+    description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
+    popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
+    source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
+    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
     },
     {
-      id: 'main-project-button',
-      title: 'Tonic',
-      image: 'images/SnapshootPortfolio(4).svg',
-      description:
-        "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.",
-      popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
-      live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
-      source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-      ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
-    },
-  ];
+    id: 'main-project-button',
+    title: 'Tonic',
+    image: 'images/SnapshootPortfolio(4).svg',
+    description:
+        'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
+    popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
+    live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
+    source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
+    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+  },
+];
 
-  function createDiv(buttonId) {
-      blurs.classList.remove('hidden');
-      const div = document.createElement('div');
-      const liveSiteBtn = document.createElement('button');
-      const sourceBtn = document.createElement('button');
-      const projectExitBtn = document.createElement('button');
-      const projectsTitle = document.createElement('h1');
-      const canopy = document.createElement('ul');
-      canopy.innerHTML = `<li id="pcanopy">${projects[buttonId].ballul[0]}</li>
-      <li id=spacer><image src=${projects[buttonId].ballul[1]}></li>
-      <li id="pcareer">${projects[buttonId].ballul[2]}</li>
-      <li id=spacer><img src=${projects[buttonId].ballul[3]}></li>
-      <li id="pcareer">${projects[buttonId].ballul[4]}</li>`;
-      const images = document.createElement('img');
-      const paragraph = document.createElement('p');
-      const projectsLanguages = document.createElement('ul');
-      projectsTitle.innerText = `${projects[buttonId].title}`;
-      projectsTitle.classList.toggle('poph1');
-      images.src = `${projects[buttonId].image}`;
-      images.classList.toggle('popupimg');
-      paragraph.innerText = `${projects[buttonId].description}`;
-      paragraph.classList.toggle('popup_paragraph');
-      projectsLanguages.classList.toggle('popul');
-      canopy.classList.toggle('ballul');
+function createDiv(buttonId) {
+  blurs.classList.remove('hidden');
+  const div = document.createElement('div');
+  const liveSiteBtn = document.createElement('button');
+  const sourceBtn = document.createElement('button');
+  const projectExitBtn = document.createElement('button');
+  const projectsTitle = document.createElement('h1');
+  const canopy = document.createElement('ul');
+  canopy.innerHTML = `<li id="pcanopy">${projects[buttonId].ballul[0]}</li>
+  <li id=spacer><image src=${projects[buttonId].ballul[1]}></li>
+  <li id="pcareer">${projects[buttonId].ballul[2]}</li>
+  <li id=spacer><img src=${projects[buttonId].ballul[3]}></li>
+  <li id="pcareer">${projects[buttonId].ballul[4]}</li>`;
+  const images = document.createElement('img');
+  const paragraph = document.createElement('p');
+  const projectsLanguages = document.createElement('ul');
+  projectsTitle.innerText = `${projects[buttonId].title}`;
+  projectsTitle.classList.toggle('poph1');
+  images.src = `${projects[buttonId].image}`;
+  images.classList.toggle('popupimg');
+  paragraph.innerText = `${projects[buttonId].description}`;
+  paragraph.classList.toggle('popup_paragraph');
+  projectsLanguages.classList.toggle('popul');
+  canopy.classList.toggle('ballul');
 
-      if (window.innerWidth < 820){
-        projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
-        <li>${projects[buttonId].popul[1]}</li>
-        <li>${projects[buttonId].popul[2]}</li>`;
+  if (window.innerWidth < 820) {
+    projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
+  <li>${projects[buttonId].popul[1]}</li>
+  <li>${projects[buttonId].popul[2]}</li>`;
       } else {
-      projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
-      <li>${projects[buttonId].popul[1]}</li>
-      <li>${projects[buttonId].popul[2]}</li>
-      <li>${projects[buttonId].popul[3]}</li>
-      <li>${projects[buttonId].popul[4]}</li>
-      <li>${projects[buttonId].popul[5]}</li>`;
-      }
-      const Top = document.querySelector('.popup');
+  projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
+  <li>${projects[buttonId].popul[1]}</li>
+  <li>${projects[buttonId].popul[2]}</li>
+  <li>${projects[buttonId].popul[3]}</li>
+  <li>${projects[buttonId].popul[4]}</li>
+  <li>${projects[buttonId].popul[5]}</li>`;
+  }
+  const Top = document.querySelector('.popup');
   if (buttonId === 0) {
     Top.style.top = '280px';
   } else if (buttonId === 1) {
@@ -336,7 +336,7 @@ hamBtn.addEventListener(('click'), () => {
   sourceBtn.textContent = 'See Source';
   sourceBtn.style.backgroundImage = "URL('images/GitHub.svg')";
   sourceBtn.style.backgroundRepeat = 'no-repeat';
-  sourceBtn.style.backgroundPosition = "115px 10px";
+  sourceBtn.style.backgroundPosition = '115px 10px';
   sourceBtn.href = `${projects[buttonId].source_link}`;
   liveSiteBtn.classList.add('popup_btn');
   sourceBtn.classList.add('popup_btn');
