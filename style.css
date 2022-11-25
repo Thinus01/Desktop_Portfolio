@@ -100,7 +100,7 @@ body {
     color: #6070ff;
     mix-blend-mode: multiply;
     transition: 50ms;
-    z-index: 1;
+    z-index: 2;
   }
 
   .ham_btn {
@@ -165,7 +165,7 @@ body {
 
   .popup {
     position: relative;
-    z-index: 2;
+    z-index: 3;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     width: 100%;
@@ -243,6 +243,7 @@ body {
   }
 
   .hidden {
+    display: none;
     opacity: 0;
     transition: 500ms;
   }
@@ -1216,7 +1217,7 @@ body {
     top: 800px;
     left: 10%;
     width: 82vw;
-    z-index: 2;
+    z-index: 3;
     border-radius: 30px;
     background-color: #fff;
   }
@@ -1342,7 +1343,7 @@ body {
     color: #c1c7d0;
     mix-blend-mode: multiply;
     transition: 50ms;
-    z-index: 1;
+    z-index: 2;
   }
 
   .hidden {
