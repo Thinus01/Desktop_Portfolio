@@ -318,16 +318,7 @@ function createDiv(buttonId) {
   <li>${projects[buttonId].popul[4]}</li>
   <li>${projects[buttonId].popul[5]}</li>`;
   }
-  const Top = document.querySelector('.popup');
-  if (buttonId === 0) {
-    Top.style.top = '280px';
-  } else if (buttonId === 1) {
-    Top.style.top = '860px';
-  } else if (buttonId === 2) {
-    Top.style.top = '1380px';
-  } else if (buttonId === 3) {
-    Top.style.top = '1950px';
-  }
+
   liveSiteBtn.textContent = 'See Live';
   liveSiteBtn.style.backgroundImage = "URL('images/SeeProject.svg')";
   liveSiteBtn.style.backgroundRepeat = 'no-repeat';
@@ -345,6 +336,7 @@ function createDiv(buttonId) {
   projectExitBtn.style.backgroundSize = 'cover';
   projectExitBtn.classList.add('popup-exit');
   div.classList.toggle('popup');
+  div.classList.toggle('moveToMe');
 
   if (window.innerWidth < 820) {
     projectExitBtn.style.backgroundImage = "URL('images/ClosePopup.svg')";
@@ -379,5 +371,6 @@ const buttons = [...document.querySelectorAll('.SeeProjectController')];
 for (let i = 0; i < buttons.length; i += 1) {
   buttons[i].addEventListener('click', () => {
     createDiv(i);
+
   });
 }
