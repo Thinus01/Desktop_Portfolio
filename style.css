@@ -136,6 +136,11 @@
     background-image: url("images/ClosePopup.svg");
   }
 
+  .moveToMe {
+    margin-top: 1206px;
+    margin-left: 20px;
+  }
+
   .popup {
     position: relative;
     z-index: 2;
@@ -1219,6 +1224,10 @@
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+  }
+
+  .moveToMe {
+    margin-top: 820px;
   }
 
   .popupimg {
