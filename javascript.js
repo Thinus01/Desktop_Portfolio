@@ -329,6 +329,7 @@ function createDiv(buttonId) {
   sourceBtn.style.backgroundImage = "URL('images/GitHub.svg')";
   sourceBtn.style.backgroundRepeat = 'no-repeat';
   sourceBtn.style.backgroundPosition = '105px 10px';
+  open.style.zIndex = '1';
   sourceBtn.href = `${projects[buttonId].source_link}`;
   liveSiteBtn.classList.add('popup_btn');
   sourceBtn.classList.add('popup_btn');
