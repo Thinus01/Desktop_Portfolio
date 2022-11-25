@@ -196,7 +196,6 @@ section.innerHTML = `
     </section>
 </div>
 <div class="area">
-<div class="popup"></div>
 </div>
 </section>
 </section>
@@ -248,36 +247,36 @@ const projects = [
   },
   {
     id: 'main-project-button',
-    title: 'Tonic',
+    title: 'Multi-Post Stories',
     image: 'images/SnapshootPortfolio(2).svg',
     description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
     popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
     live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
     source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+    ballul: ['FACEBOOK', 'images/Counter.svg', 'Full Stack Dev', 'images/Counter.svg', '2015'],
   },
   {
     id: 'main-project-button',
-    title: 'Tonic',
+    title: 'Facebook 360',
     image: 'images/SnapshootPortfolio(3).svg',
     description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
     popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
     live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
     source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+    ballul: ['FACEBOOK', 'images/Counter.svg', 'Full Stack Dev', 'images/Counter.svg', '2015'],
   },
   {
     id: 'main-project-button',
-    title: 'Tonic',
+    title: 'Uber Navigation',
     image: 'images/SnapshootPortfolio(4).svg',
     description:
         'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ab odio dolorum temporibus adipisci, reiciendis itaque alias quae aut! Pariatur odit deleniti sint aperiam. Architecto quisquam harum quas maiores obcaecati! Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem veniam obcaecati dolorum officiis, laboriosam id earum iste et sapiente culpa odio tempora alias, voluptates exercitationem, minus nemo molestias quis amet!Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus omnis deleniti reiciendis praesentium ab odit eaque quam quidem nobis, veniam quia necessitatibus voluptate assumenda, et placeat ipsam similique accusantium. Est? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et placeat tempore delectus commodi temporibus quia suscipit nobis atque, totam, quas recusandae illo laborum inventore explicabo similique pariatur deserunt doloribus. Explicabo. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptatem aperiam architecto cum asperiores, quae iure quibusdam odio eius, ipsam repellendus ut tenetur ratione necessitatibus nemo, consequatur ex! Consectetur, nobis.',
     popul: ['HTML', 'CSS', 'JavaScript', 'GitHub', 'Ruby', 'Bootstrap'],
     live_link: 'https://thinus01.github.io/Desktop_Portfolio/',
     source_link: 'https://github.com/Thinus01/Desktop_Portfolio',
-    ballul: ['CANOPY', 'images/Counter.svg', 'Back End Dev', 'images/Counter.svg', '2015'],
+    ballul: ['Uber', 'images/Counter.svg', 'Lead Developer', 'images/Counter.svg', '2018'],
   },
 ];
 
@@ -288,6 +287,7 @@ function createDiv(buttonId) {
   const sourceBtn = document.createElement('button');
   const projectExitBtn = document.createElement('button');
   const projectsTitle = document.createElement('h1');
+  const imgContainer = document.createElement('div');
   const canopy = document.createElement('ul');
   canopy.innerHTML = `<li id="pcanopy">${projects[buttonId].ballul[0]}</li>
   <li id=spacer><image src=${projects[buttonId].ballul[1]}></li>
@@ -299,12 +299,13 @@ function createDiv(buttonId) {
   const projectsLanguages = document.createElement('ul');
   projectsTitle.innerText = `${projects[buttonId].title}`;
   projectsTitle.classList.toggle('poph1');
-  images.src = `${projects[buttonId].image}`;
+  imgContainer.innerHTML = `<image class="popupimg" src=${projects[buttonId].image}>`;
   images.classList.toggle('popupimg');
   paragraph.innerText = `${projects[buttonId].description}`;
   paragraph.classList.toggle('popup_paragraph');
   projectsLanguages.classList.toggle('popul');
   canopy.classList.toggle('ballul');
+  imgContainer.classList.toggle('imgContainer');
 
   if (window.innerWidth < 820) {
     projectsLanguages.innerHTML = `<li>${projects[buttonId].popul[0]}</li>
@@ -327,7 +328,7 @@ function createDiv(buttonId) {
   sourceBtn.textContent = 'See Source';
   sourceBtn.style.backgroundImage = "URL('images/GitHub.svg')";
   sourceBtn.style.backgroundRepeat = 'no-repeat';
-  sourceBtn.style.backgroundPosition = '115px 10px';
+  sourceBtn.style.backgroundPosition = '105px 10px';
   sourceBtn.href = `${projects[buttonId].source_link}`;
   liveSiteBtn.classList.add('popup_btn');
   sourceBtn.classList.add('popup_btn');
@@ -353,7 +354,7 @@ function createDiv(buttonId) {
   }
   div.appendChild(projectsTitle);
   div.appendChild(canopy);
-  div.appendChild(images);
+  div.appendChild(imgContainer);
   div.appendChild(paragraph);
   div.appendChild(projectsLanguages);
   div.appendChild(liveSiteBtn);
