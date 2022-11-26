@@ -21,6 +21,19 @@ body {
     width: 100%;
   }
 
+  #Error {
+    display: none;
+    position: absolute;
+    margin-left: 100%;
+    width: 205px;
+    border: solid 2px red;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: red;
+    background-color: white;
+    border-radius: 8px;
+  }
+
   .popup ul {
     width: 101%;
     display: flex;
@@ -1058,7 +1071,7 @@ body {
     color: #172b4d;
   }
 
-  .user_email {
+  #user_email {
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
     border: 1px solid #ebebff;
@@ -1198,6 +1211,19 @@ body {
 @media (min-width: 821px) {
   html {
     width: calc(100vw - 15%);
+  }
+
+  #Error {
+    display: none;
+    position: absolute;
+    margin-left: 100%;
+    width: 205px;
+    border: solid 2px red;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    color: red;
+    background-color: white;
+    border-radius: 8px;
   }
 
   #header {
@@ -1855,7 +1881,7 @@ body {
     color: #172b4d;
   }
 
-  .user_email {
+  #user_email {
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
     width: 400px;

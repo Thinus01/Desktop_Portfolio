@@ -9,6 +9,7 @@ const projectsSection = document.querySelector('#projects');
 const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
+const errorM = document.getElementById('Error');
 
 section.innerHTML = `
 <section id="list_portfolio">
@@ -375,3 +376,18 @@ for (let i = 0; i < buttons.length; i += 1) {
     createDiv(i);
   });
 }
+
+function onSubmit(e) {
+  const userEmail = document.getElementById('user_email');
+  const email = userEmail.value;
+
+  if (email !== email.toLocaleLowerCase()) {
+    e.preventDefault();
+    errorM.style.display = 'flex';
+  } else {
+    errorM.style.display = 'none';
+  }
+}
+
+const subLink = document.getElementById('submitLink');
+subLink.addEventListener('submit', onSubmit);

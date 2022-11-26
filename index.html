@@ -116,12 +116,13 @@
                     <h2 id="contact_me_text">Contact me</h2>
                     <p id="sub_contact">If you have an application you are interesed in developing, a feature that you
                         need built or a project that needs coding. I'd love to help with it.</p>
-                    <form action="https://formspree.io/f/xjvjejyb" method="POST">
+                    <form id="submitLink" action="https://formspree.io/f/xjvjejyb" method="POST">
                         <input class="username" type="text" placeholder="Name and surname" maxlength="30" required></input>
-                        <input class="user_email" type="email" placeholder="beautifulemail@gmail.com" required></input>
+                        <input id="user_email" type="text" placeholder="beautifulemail@gmail.com" required></input>
                         <textarea class="user_message" type="textarea" placeholder="Write your message here" maxlength="500"
                             required></textarea>
-                        <button type="submit" id="get_in_touch_button">Get In Touch</button>
+                        <button id="get_in_touch_button">Get In Touch<div id="Error">Can you please make the email all lowercase, don't worry the form was not sent.</div></button>
+                        
                     </form>
                 </div>
             </div>
