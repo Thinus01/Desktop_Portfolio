@@ -9,6 +9,20 @@ body {
   padding: 0;
 }
 
+#Error {
+  display: none;
+  margin-left: 10%;
+  margin-top: 298%;
+  width: 150px;
+  border: solid 2px red;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  color: red;
+  background-color: white;
+  border-radius: 8px;
+  
+}
+
 /* Mobile */
 @media (max-width: 820px) {
   body {
@@ -1058,7 +1072,7 @@ body {
     color: #172b4d;
   }
 
-  .user_email {
+  #user_email {
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
     border: 1px solid #ebebff;
@@ -1855,7 +1869,7 @@ body {
     color: #172b4d;
   }
 
-  .user_email {
+  #user_email {
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
     width: 400px;
