@@ -9,6 +9,9 @@ const projectsSection = document.querySelector('#projects');
 const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
+const form = document.getElementById('get_in_touch_button');
+const forms = document.getElementById('get_in_touch_buttons');
+const errorM = document.getElementById('Error');
 
 section.innerHTML = `
 <section id="list_portfolio">
@@ -375,3 +378,23 @@ for (let i = 0; i < buttons.length; i += 1) {
     createDiv(i);
   });
 }
+
+
+function onSubmit(e) {
+    const userEmail = document.getElementById('user_email');
+    const email = userEmail.value;
+
+    if(email !== email.toLocaleLowerCase()){
+        e.preventDefault();
+        errorM.style.display = 'flex';
+        console.log('more');
+        console.log(email)
+    } else {
+        errorM.style.display = 'none';
+        console.log('good')
+        console.log(email)
+    }
+}
+
+const subLink = document.getElementById('submitLink');
+subLink.addEventListener('submit', onSubmit);
