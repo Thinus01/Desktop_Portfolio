@@ -9,7 +9,7 @@ const projectsSection = document.querySelector('#projects');
 const body = document.querySelector('body');
 const section = document.createElement('section');
 body.appendChild(section);
-const form = document.getElementById('get_in_touch_button');
+const errorM = document.getElementById('Error');
 
 section.innerHTML = `
 <section id="list_portfolio">
@@ -386,7 +386,7 @@ function onSubmit(e) {
     errorM.style.display = 'flex';
   } else {
     errorM.style.display = 'none';
-  };
+  }
 }
 
 const subLink = document.getElementById('submitLink');
